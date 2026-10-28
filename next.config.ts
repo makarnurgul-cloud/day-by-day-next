@@ -1,19 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  experimental: {
-    agentFeedback: true,
-  },
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
+  output: "export",
+  basePath: "/day-by-day-next",
+  assetPrefix: "/day-by-day-next/",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
   },
 };
 
