@@ -32,7 +32,7 @@ export default function Home() {
   const [mood, setMood] = useState("😊 Жақсы");
   const [note, setNote] = useState("");
   const [entries, setEntries] = useState<string[]>([]);
-  const [name, setName] = useState("Нұргүл");
+  const [name, setName] = useState("Әсел");
 
   const completed = tasks.filter((task) => task.done).length;
   const progress = tasks.length
